@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Банковская карта</title>
+</head>
+<body>
+    <h1>Данные банковской карты</h1>
+
+   <section id="card">
+    <div class="card-wrapper">
+        <div class="error-message" style="display: none;">
+            <p></p>
+        </div>
+
+        <div class="card-container">
+            <div class="card front active">
+                <div class="payment-system" style="display: none;">
+                    <p>MIR</p>
+                    <p>Tinkoff Bank</p>
+                </div>
+                
+                <div class="card-number-container">
+                    <input class="card-number" type="text" maxlength="19" placeholder="2200 7000 1234 5678">
+                </div>
+               
+                
+                <div class="user-info">
+                    <div class="user-info-wrapper">
+                        <div class="user">
+                            <p>card holder</p>
+                            <input type="text" class="name" placeholder="your name" maxlength="50">
+                        </div>
+
+                        <div class="date">
+                            <p>valid thru</p>
+                            <input type="text" class="month-year" placeholder="MM/YY" maxlength="5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card back">
+                <div class="magnetic-strip"></div>
+                <input type="text" class="cvv" placeholder="123" maxlength="3">
+                <p class="cvv">Для завершения покупки введите CVC код</p>
+            </div>
+        </div>
+
+        <div class="button">
+            <button type="button" id="confirm-btn">Подтвердить</button>
+        </div>
+    </div>
+</section>
+
+
+<script src="assets/script/date-mask.js"></script>
+<script src="assets/script/name-mask.js"></script>
+<script src="assets/script/card-number-mask.js"></script>
+<script src="assets/script/button.js"></script>
+<script src="assets/script/button-active.js"></script>
+
+</body>
+</html>
